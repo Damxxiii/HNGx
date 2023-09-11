@@ -13,27 +13,22 @@
 
     </head>
     <body>
-        <div class="display-picture">
-            <div class="photo">
+        <section class="display-picture">
+            <div class="profile">
                 <img src="https://pbs.twimg.com/profile_images/1681934207025664001/2CGDjNgs_400x400.jpg"
                 alt="Damon"
-                data-testid="slackDisplayImage"
-
+                data-testid="slackDisplayImage">
             </div>
-        </div>
-
-        <div class="container"
-        <section class="first section">
-            <p data-testid="SlackUserName">Damon</p>
-            <p data-testid="CurrentDayOfTheWeek" id="day"></p>
-            <p data-testid="CurrentUTCTime" id="UTC"></p>
-            <p data-testid="myTrack"><b>Track:</b>Frontend</p>
-            <a data-testid="githubURL" href="https://github/Damxxiii/HNGx"></a>
+            <div class="bio">
+                <p data-testid="myTrack"><b>Track:</b>Frontend</p>
+                <span data-testid="SlackUserName"><b>Username</b>:Damon</span>
+            </div>
+            
+            <p><b>Current Date and Time is</b>: <span id='date-time'></span>.</p>
+            <a href="https://github.com/Damxxiii/HNGx" data-testid="githubURL" 
+            target="_blank"><b>My github Repo</b>:https://github.com/Damxxiii/HNGx </a>
         </section>
 
-        </div>
+        <script src='app.js'></script>
     </body>
-    <script
-        src="app.js">
-    </script>
 </html>
